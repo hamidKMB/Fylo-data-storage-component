@@ -1,0 +1,387 @@
+body{
+  background-color: #0a043c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* the main picture */
+.desktop-image{
+  background-image: url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Container */
+.container-fluid{
+  position: absolute;
+  z-index: 1;
+  top:35%;
+  padding-right: 120px;
+}
+
+.row{
+  width: 100%;
+}
+
+/* choosen files */
+.fylo{
+  border-radius: 17px;
+  border-top-right-radius: 100px;
+  height: 12rem;
+  width: 20.5rem;
+  background-color: #161d6f;
+  float: right;
+}
+
+.fylo-spacing{
+  padding-right: 16px;
+}
+
+.fylo-logo{
+  padding: 40px 30px 23px;
+}
+
+.fylo-links{
+  padding: 5px 21px;
+}
+
+.fylo-image-links-sizing{
+  text-align: center;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  background-color: #0a043c;
+  margin-left: 13px;
+  border-radius: 11px;
+  padding: 9px 10px;
+}
+.fylo-image-links-sizing:hover{
+  box-shadow: 0 0 10px #fff;
+}
+/* range bar */
+
+.range-bar{
+  border-radius: 17px;
+  height: 9rem;
+  width: 32rem;
+  background-color: #161d6f;
+  padding: 30px 30px;
+}
+
+.range-bar-spacing{
+  padding-top: 48px;
+}
+
+.left-over-space{
+  display: inline-block;
+  height: 56px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 7px;
+  border-bottom-right-radius: 0;
+  float: right;
+  position: relative;
+  bottom: 65px;
+  padding-left: 19px;
+  padding-top: 5px;
+}
+
+.sharp-corner{
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  border-left: 15px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.gb-free{
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.gb-left{
+  font-weight: 700;
+  font-size: 7pt;
+  position: relative;
+  bottom: 5px;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+.label{
+  color:#fff;
+  font-weight: 100;
+  font-size: 12pt;
+
+}
+
+.usage-number{
+  font-weight: 700;
+}
+
+.range{
+  width: 90%px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #0a043c;
+  padding: 2px;
+  margin-top: 20px;
+}
+
+.gradient{
+  width: 75%;
+  height: 11px;
+  border-radius: 20px;
+  padding: 1px;
+  background-image: linear-gradient(to right, #e1bc91, #ff9292, #f875aa);
+}
+
+.thumb{
+  position: relative;
+  left: 35px;
+  background-color: #fff;
+  height: 9px;
+  width: 9px;
+  border-radius: 10px;
+  float: right;
+}
+
+.min-max{
+  margin-top: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+.min{
+  display: inline-block;
+}
+.max{
+  float: right;
+}
+
+/* footer */
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution{
+  display: inline-block;
+  width: auto;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 0 0 0;
+  color: #bbb;
+  font-size: 8pt
+}
+
+ /* mobile design */
+@media screen and (max-width:992px) {
+
+  body{
+    background-image: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+
+  .container-fluid{
+    position: absolute;
+    z-index: 0;
+    top: 20%;
+    padding-left: 0 ;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .row{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .col-lg-6{
+    padding: 0 ;
+  }
+
+  .desktop-image{
+    visibility: hidden;
+  }
+
+  /* choosen files */
+  .fylo{
+    border-radius: 17px;
+    border-top-right-radius: 100px;
+    height: 13rem;
+    width: 21rem;
+    background-color: #161d6f;
+    display: inline-block;
+    float: none;
+    text-align: left;
+    padding-left: 10px;
+    }
+
+  .fylo-spacing{
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .fylo-logo{
+    padding: 50px 40px 40px;
+  }
+
+  .fylo-links{
+    padding: 5px 21px;
+  }
+
+  .fylo-image-links-sizing{
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-color: #0a043c;
+    margin-left: 17px;
+    border-radius: 10px;
+    padding-top: 12px;
+  }
+  .fylo-image-links-sizing:hover{
+    box-shadow: 0 0 10px #fff;
+  }
+  /* range bar */
+
+  .range-bar{
+    display: inline-block;
+    border-radius: 17px;
+    height: 11rem;
+    width: 21rem;
+    background-color: #161d6f;
+    padding: 0;
+  }
+
+  .range-bar-spacing{
+    text-align: center;
+  }
+
+  .left-over-space{
+    display: inline-block;
+    height: 4.6rem;
+    width: 12.375rem;
+    background-color: #fff;
+    border-radius: 7px;
+    border-bottom-right-radius: 7px;
+    float: none;
+    position: absolute;
+    bottom: -30px;
+    padding-left: 0;
+    padding-top: 5px;
+    margin: 0 21px;
+  }
+
+  .sharp-corner{
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #fff;
+    visibility: hidden;
+  }
+
+  .gb-free{
+    font-weight: 700;
+    font-size: 40px;
+    display: inline-block;
+  }
+
+  .gb-left{
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    bottom: 8px;
+    left: 9px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #bbbbbb;
+  }
+
+  .label{
+    color:#fff;
+    font-weight: 100;
+    font-size: 12pt;
+    margin-top: 20px;
+  }
+
+  .usage-number{
+    font-weight: 700;
+  }
+
+  .range{
+    width: 85%;
+    height: 21px;
+    border-radius: 20px;
+    background-color: #0a043c;
+    padding: 2px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .gradient{
+    width: 75%;
+    height: 17px;
+    border-radius: 20px;
+    padding: 2px 2px 1px;
+    background-image: linear-gradient(to right, #e1bc91, #ff9292, #f875aa);
+  }
+
+  .thumb{
+    position: relative;
+    left: 0;
+    background-color: #fff;
+    height: 13px;
+    width: 13px;
+    border-radius: 15px;
+    float: right;
+  }
+
+  .min-max{
+    margin: 5px 28px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .min{
+    display: inline-block;
+    float: left;
+  }
+  .max{
+    float: right;
+  }
+
+  /* footer */
+
+
+}
